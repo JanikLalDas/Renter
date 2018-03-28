@@ -1,0 +1,12 @@
+<?php
+include("config.php");
+$sql = "CREATE DATABASE test1";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+
+$conn->close();
+?>
